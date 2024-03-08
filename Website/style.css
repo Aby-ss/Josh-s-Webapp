@@ -4,6 +4,8 @@ body {
     margin: 0;
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
+    text-align: center; /* Centers all text */
+    color: #e5dddd; /* Applies the Alice White color */
 }
 
 .background-top-circle {
