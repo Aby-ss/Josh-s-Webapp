@@ -1,0 +1,118 @@
+body {
+    background-color: #04010B;
+    height: 100%;
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.background-top-circle {
+    position: fixed; /* Ensures the circle stays in the same place even when scrolling */
+    top: -5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px; /* Adjust the size of the circle as needed */
+    height: 500px; /* Adjust the size of the circle as needed */
+    background-image: linear-gradient(to bottom right, #4e68a4, #5e1a67); /* Gradient from top-left to bottom-right */
+    border-radius: 50%; /* This creates the circle shape */
+    filter: url(#grain) blur(10px); /* Applying the grain filter along with blur */
+    filter: blur(90px); /* Applies the blur effect directly to the circle */
+    z-index: -1; /* Ensures the circle stays behind the content */
+}
+
+.background-btm1-circle {
+    position: fixed; /* Ensures the circle stays in the same place even when scrolling */
+    top: 100%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    width: 400px; /* Adjust the size of the circle as needed */
+    height: 400px; /* Adjust the size of the circle as needed */
+    background-image: linear-gradient(to bottom right, #4e68a4, #5e1a67); /* Gradient from top-left to bottom-right */
+    border-radius: 50%; /* This creates the circle shape */
+    filter: blur(100px); /* Applies the blur effect directly to the circle */
+    z-index: -1; /* Ensures the circle stays behind the content */
+}
+
+.background-btm2-circle {
+    position: fixed; /* Ensures the circle stays in the same place even when scrolling */
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px; /* Adjust the size of the circle as needed */
+    height: 300px; /* Adjust the size of the circle as needed */
+    background-image: linear-gradient(to bottom right, #4e68a4, #5e1a67); /* Gradient from top-left to bottom-right */
+    border-radius: 50%; /* This creates the circle shape */
+    filter: blur(100px); /* Applies the blur effect directly to the circle */
+    z-index: -1; /* Ensures the circle stays behind the content */
+}
+
+.background-btm3-circle {
+    position: fixed; /* Ensures the circle stays in the same place even when scrolling */
+    top: 100%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    width: 300px; /* Adjust the size of the circle as needed */
+    height: 300px; /* Adjust the size of the circle as needed */
+    background-image: linear-gradient(to bottom right, #4e68a4, #5e1a67); /* Gradient from top-left to bottom-right */
+    border-radius: 50%; /* This creates the circle shape */
+    filter: blur(100px); /* Applies the blur effect directly to the circle */
+    z-index: -1; /* Ensures the circle stays behind the content */
+}
+
+.navbar {
+    position: fixed;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 50px); /* Adjusted navbar width for screen edge margins */
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+    border: solid 0.5px rgba(255, 255, 255, 0.2); /* Lighter outline */
+    border-radius:15px;
+    z-index: 1000;
+    display: flex;
+    justify-content: center; /* Center the child elements horizontally */
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.links-container {
+    display: flex;
+    justify-content: center; /* This will center the links within their container */
+    flex-grow: 1; /* Allows the container to take up available space, pushing the button to the right */
+}
+
+.navbar-brand {
+    /* Style for the "Josh" text */
+    color: white; /* Example text color */
+    font-weight: bold; /* Example font weight */
+    margin-right: 100px;
+    /* Add more styling as needed */
+  }
+  
+
+.navbar a, .navbar button {
+  color: white; /* Adjusted for better contrast against the dark background */
+  text-decoration: none;
+  font-size: 15px;
+  margin: 0 20px; /* Creates 10px space between links */
+  border-radius: 8px; /* Ensuring consistency with the requested border-radius */
+}
+
+  /* Additional style to ensure the first and last link have proper spacing */
+.navbar a:first-child {
+    margin-left: 0;
+}
+
+.book-call-btn {
+    padding: 8px 20px; /* Adjust padding as needed */
+    background-color: rgba(0, 0, 0, 0.5); /* Matching the navbar's style */
+    border: 1px solid white; /* Add border as needed */
+    cursor: pointer; /* Changes cursor to pointer on hover over the button */
+    margin-left: auto; /* This pushes the button to the far right */
+}
+  
+  .book-call-btn:hover {
+    opacity: 0.8; /* Decreases opacity when hovering over the button */
+}
