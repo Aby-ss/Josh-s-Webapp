@@ -248,3 +248,20 @@ ul {
   margin: 20px 0 10px 0; /* Adjusts spacing around the title */
   color: white; /* Adjusts the color as needed */
 }
+
+.booking-btn {
+  background-color: #D65978; /* Button color */
+  color: white; /* Text color */
+  border: none; /* No border */
+  padding: 15px 30px; /* Increased padding inside the button */
+  font-size: 16px; /* Text size */
+  cursor: pointer; /* Changes the mouse cursor to a pointer */
+  border-radius: 5px; /* Rounded corners */
+  outline: none; /* Removes the outline */
+  box-shadow: 0 0 8px #D65978, 0 0 12px #D65978, 0 0 16px #D65978; /* Glowing effect */
+  transition: box-shadow 0.3s ease-in-out; /* Smooth transition for the glow effect */
+}
+
+.booking-btn:hover {
+  box-shadow: 0 0 12px #D65978, 0 0 16px #D65978, 0 0 20px #D65978; /* Enhanced glowing effect on hover */
+}
