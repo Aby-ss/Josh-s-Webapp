@@ -115,6 +115,95 @@ body {
     margin-left: auto; /* This pushes the button to the far right */
 }
   
-  .book-call-btn:hover {
+.book-call-btn:hover {
     opacity: 0.8; /* Decreases opacity when hovering over the button */
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  gap: 10px;
+}
+
+.left-boxes {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center; /* Center align the left boxes */
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(174, 174, 174, 0.186); /* Grey with 50% opacity */
+  border: solid 0.186px transparent; /* Initial transparent border for gradient */
+  border-radius: 15px;
+  position: relative; /* Needed for pseudo-elements */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  text-align: center; /* Center text horizontally */
+}
+
+/* Gradient border using pseudo-element */
+.box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  margin: -0.5px;
+  border-radius: inherit;
+  background: linear-gradient(rgba(86, 86, 86, 0.5), rgba(77, 77, 77, 0.5)); /* Simple gradient for visibility */
+}
+
+.box.small {
+  height: 200px;
+  width: 500px; /* Adjust as needed */
+  position: relative;
+}
+
+.box.large {
+  height: 420px;
+  width: 420px; /* Adjust as needed */
+  overflow: hidden;
+  position: relative;
+}
+
+.background-box-circle {
+  position: absolute;
+  top: 85%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 300px;
+  background-image: linear-gradient(to bottom right, #4e68a4, #5e1a67);
+  border-radius: 50%;
+  filter: blur(80px);
+  z-index: 0;   
+}
+
+.text-content {
+  text-align: center;
+  padding: 10px;
+  color: white; /* Adjust text color as needed */
+  margin-bottom: -100px;
+}
+
+.text-content h2 {
+  font-size: 1.4em; /* Slightly larger titles */
+  margin-bottom: 5px; /* More space below titles */
+  text-align: left;
+  margin-top: 10px;
+}
+
+.text-content p {
+  font-size: 0.9em; /* Standard paragraph text size */
+  text-align: left;
+  margin-top: 10px;
 }
