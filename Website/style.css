@@ -300,3 +300,38 @@ ul {
   margin: 5px 0; /* Adjusts spacing around text elements */
 }
 
+.get-started-section {
+  padding-left: 200px; /* Adds some space from the left edge of the screen */
+  margin-top: 80px;
+}
+
+.step-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Aligns content to the left, with space from the screen's edge */
+  max-width: 600px; /* Adjust the list's maximum width */
+}
+
+.step-with-description {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px; /* Spacing between each step */
+}
+
+.step {
+  width: 100px; /* Makes boxes smaller and more boxy */
+  height: 50px;
+  border-radius: 5px; /* Less radius for a boxier look */
+  border: 0.5px solid white;
+  box-shadow: inset 0 10px 10px -10px rgba(0,0,0,0.5); /* Inner shadow */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 30px; /* Space between the step box and the description */
+}
+
+/* Optional: Adjusts the paragraph styling if needed */
+.step-with-description p {
+  margin: 0; /* Removes default margins */
+  margin-top: 10px;
+}
