@@ -207,3 +207,44 @@ body {
   text-align: left;
   margin-top: 10px;
 }
+
+.compared-box {
+  width: 300px; /* Adjust based on your preference */
+  height: 450px; /* Ensures equal height */
+  border-radius: 15px;
+  border: solid 0.5px transparent; /* For gradient outline */
+  background: linear-gradient(rgba(101, 101, 101, 0.3), rgba(52, 52, 52, 0.3)) padding-box, linear-gradient(to right, rgba(255,255,255,0.5), rgba(204,204,204,0.5)) border-box; /* Adjusted for more transparency and less white */
+  margin: 10px; /* Ensures some space between boxes */
+  display: inline-block; /* Align boxes next to each other */
+  color: white; /* Adjust text color as needed */
+}
+
+ul {
+  list-style-type: none; /* Removes default list style */
+  padding: 15px; /* Adds some padding inside the box */
+}
+
+.compared-box ul li {
+  margin-bottom: 10px; /* Increase spacing between list items */
+  /* Additional styling here if needed */
+}
+
+.compared-box ul li:before {
+  margin-right: 5px;
+}
+
+#compared-box1 li:before {
+  content: "✅";
+}
+
+#compared-box2 li:before, #compared-box3 li:before {
+  content: "❌";
+}
+
+.compared-box-title {
+  font-size: 30px;
+  text-align: center;
+  font-weight: normal;
+  margin: 20px 0 10px 0; /* Adjusts spacing around the title */
+  color: white; /* Adjusts the color as needed */
+}
