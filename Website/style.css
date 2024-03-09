@@ -265,3 +265,38 @@ ul {
 .booking-btn:hover {
   box-shadow: 0 0 12px #D65978, 0 0 16px #D65978, 0 0 20px #D65978; /* Enhanced glowing effect on hover */
 }
+
+.HIW-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Ensures wrapping if the screen is too small */
+  margin-top: -50px;
+}
+
+.HIW-box {
+  width: 300px;
+  height: 200px;
+  border: solid 0.5px white;
+  background: linear-gradient(rgba(56, 56, 56, 0.3), rgba(28, 28, 28, 0.3)) padding-box, linear-gradient(to right, rgba(255,255,255,0.5), rgba(204,204,204,0.5)) border-box;
+  margin: 20px; /* Adjusts spacing between boxes */
+  padding: 10px; /* Adjusts padding inside the box */
+  box-shadow: inset 0 10px 10px -10px rgba(0,0,0,0.5); /* Inner shadow from above */
+  text-align: center; /* Centers the text */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+
+.HIW-box-image {
+  width: 80px; /* Adjust based on your preference */
+  height: 80px; /* Adjust based on your preference */
+  margin-bottom: 10px; /* Adjusts space above the image */
+}
+
+.HIW-box h2, .HIW-box p {
+  margin: 5px 0; /* Adjusts spacing around text elements */
+}
+
