@@ -453,3 +453,29 @@ ul {
 .learn-more-btn:hover {
   opacity: 0.8; /* Decreases opacity when hovering over the button */
 }
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* This makes the main-container take the full viewport height */
+}
+
+.video-container {
+  width: 1024px; /* Set to the desired width of your video */
+  height: 576px; /* Set to the desired height of your video */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(148, 148, 148, 0.3), rgba(148, 148, 148, 0.3)) padding-box, 
+              linear-gradient(to right, rgba(148, 148, 148, 0.193), rgba(148, 148, 148, 0.073)) border-box;
+  border-radius: 15px;
+  border: 0.5px solid transparent; /* To enable the border-box background */
+  background-clip: padding-box, border-box; /* Ensures background applies to padding and border */
+  overflow: hidden; /* Ensures the video corners are clipped to match the container's border-radius */
+}
+
+video {
+  width: 100%; /* Makes the video fill the container */
+  height: 100%; /* Adjusts the video height to fill the container */
+}
