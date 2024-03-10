@@ -410,3 +410,46 @@ ul {
   background-color: rgba(174, 174, 174, 0.3);
 }
 
+.RTGS-rectangle {
+  position: relative;
+  width: 800px; /* Adjust the rectangle's width as needed */
+  height: 300px; /* Adjust the rectangle's height as needed */
+  border: solid 2px white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 150px auto; /* Centering the rectangle horizontally */
+  background: linear-gradient(rgba(56, 56, 56, 0.3), rgba(28, 28, 28, 0.3)) padding-box, 
+              linear-gradient(to right, rgba(141, 141, 141, 0.193), rgba(168, 168, 168, 0.073)) border-box;
+  border-radius: 15px; /* Optional: Adds slight rounding to the rectangle's corners */
+  background-clip: padding-box, border-box; /* Ensures the background applies correctly to the border */
+  z-index: 2; /* Ensures the rectangle is above the circles */
+}
+
+.RTGS-rectange h1 {
+  margin: 0;
+  padding-top: 20px; /* Adjust as needed to position slightly above the middle */
+  text-align: center;
+}
+
+.RTGS-rectange p {
+  text-align: center;
+  padding: 20px;
+}
+
+.learn-more-btn {
+  padding: 16px 31px; /* Increased padding inside the button */
+  font-size: 16px;
+  background-color: rgba(83, 83, 83, 0.108); /* Matching the navbar's style */
+  border: 1px solid white; /* Add border as needed */
+  cursor: pointer; /* Changes cursor to pointer on hover over the button */
+  border-radius: 5px;
+  color: antiquewhite;
+}
+
+.learn-more-btn:hover {
+  opacity: 0.8; /* Decreases opacity when hovering over the button */
+}
